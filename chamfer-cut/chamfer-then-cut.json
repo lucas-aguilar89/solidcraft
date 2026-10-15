@@ -1,0 +1,8 @@
+{"commands": [
+  {"command": "sketch.create", "params": {"plane": "XY"}},
+  {"command": "sketch.rectangle.rounded", "params": {"p0": [0, 0], "p1": [40, 40], "radius": 8}},
+  {"command": "sketch.finish", "params": {}},
+  {"command": "solid.extrude", "params": {"distance": 20, "operation": "new"}},
+  {"command": "solid.chamfer", "params": {"distance": 2, "edges": [[20, 0, 0], [40, 20, 0], [20, 40, 0], [0, 20, 0], [2.343, 2.343, 0], [37.657, 2.343, 0], [37.657, 37.657, 0], [2.343, 37.657, 0]]}},
+  {"command": "solid.extrude", "params": {"face": [20, 20, 20], "distance": -5, "operation": "cut"}}
+]}
